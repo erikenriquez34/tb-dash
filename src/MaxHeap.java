@@ -51,7 +51,7 @@ public class MaxHeap <T extends Comparable<T>> {
     }
 
     private void bubbleUp(int index) {
-        while (index > 1 && (heap[index].compareTo(heap[index/2]) < 0) ) {
+        while (index > 1 && (heap[index].compareTo(heap[index/2]) > 0) ) {
             swap(index, index/2);
             index = index/2;
         }
