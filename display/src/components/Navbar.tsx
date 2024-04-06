@@ -1,11 +1,22 @@
 import './Navbar.css'
-import NavSection from "./NavSection";
-function Navbar() {
+
+interface Props {
+    toggleScreen: (index: number) => void;
+    screen: number
+}
+function Navbar(props: Props) {
     return (
-        <div className="navbar">
-            <NavSection title={"Saber"}/>
-            <NavSection title={"Tooth"}/>
-        </div>
+        <nav className="navbar">
+            <div className={props.screen === 0 ? "navSection active-navSection" : "navSection"}
+                 onClick={() => props.toggleScreen(0)}>
+                <p>Saber</p>
+            </div>
+
+            <div className={props.screen === 1 ? "navSection active-navSection" : "navSection"}
+                 onClick={() => props.toggleScreen(1)}>
+                <p>Tooth</p>
+            </div>
+        </nav>
     );
 }
 

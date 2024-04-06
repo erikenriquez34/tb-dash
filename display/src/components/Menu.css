@@ -1,0 +1,17 @@
+.menuScreen {
+    display: flex;
+    margin: 20px;
+    height: 82%;
+    background-color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #eaeaea;
+}
+
+.itemGrid {
+    padding: 0 25px 0 25px;
+}
+
+.hidden {
+    display: none;
+}
