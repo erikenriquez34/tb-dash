@@ -8,7 +8,7 @@ function TicketCheckout(props: Props) {
     return (
         <footer className="ticketCheckout">
             <div className="ticketTotal">
-                Total: <span>{props.total}</span>
+                Total: <span>${(props.total).toFixed(2)}</span>
             </div>
 
             <div className="ticketConfig">

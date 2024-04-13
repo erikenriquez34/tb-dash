@@ -1,0 +1,35 @@
+.gridContainer {
+    width: 75%;
+    padding-left: 25px;
+}
+
+.ItemGridNav {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.ItemGridNavSection {
+    margin: 10px;
+}
+
+.selectItems {
+    display: flex;
+}
+
+.itemQuantity {
+    margin: 0 10px 0 10px;
+}
+
+.itemDisplay {
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 10px 10px;
+}

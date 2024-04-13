@@ -1,6 +1,6 @@
 import "./Menu.css"
-import Ticket from "./Ticket"
-import ItemGrid from "./ItemGrid"
+import Ticket from "./Ticket/Ticket"
+import ItemGrid from "./ItemGrid/ItemGrid"
 
 interface Props {
     screen: number

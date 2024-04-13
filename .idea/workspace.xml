@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="display init">
-      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Ticket.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Ticket.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/TicketCheckout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/TicketHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/TicketItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/NavSection.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Navbar.tsx" afterDir="false" />
+    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="ticket skeleton complete">
+      <change afterPath="$PROJECT_DIR$/display/public/images/cusp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/Item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGridNav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemQuantity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/display/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/TicketCheckout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketCheckout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/TicketHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/TicketItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -79,6 +83,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/display/public" />
+      <recent name="$PROJECT_DIR$/display/src/components/ItemGrid" />
+      <recent name="$PROJECT_DIR$/display/src" />
+      <recent name="$PROJECT_DIR$/display/src/components/Ticket" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -88,7 +98,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-4caba194b151-fab2e099" />
         <option value="jdk-22-openjdk-22-4caba194b151-6fbd92ee" />
       </set>
     </attachedChunks>
@@ -108,7 +117,10 @@
       <workItem from="1712423133269" duration="11000" />
       <workItem from="1712423154647" duration="10399000" />
       <workItem from="1712436253875" duration="1180000" />
-      <workItem from="1712439033058" duration="2534000" />
+      <workItem from="1712439033058" duration="2863000" />
+      <workItem from="1713025488538" duration="3205000" />
+      <workItem from="1713028703106" duration="4827000" />
+      <workItem from="1713033542611" duration="1280000" />
     </task>
     <task id="LOCAL-00001" summary="display init">
       <option name="closed" value="true" />
@@ -118,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712025104568</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ticket skeleton complete">
+      <option name="closed" value="true" />
+      <created>1712441882640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712441882640</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="display init" />
-    <option name="LAST_COMMIT_MESSAGE" value="display init" />
+    <MESSAGE value="ticket skeleton complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="ticket skeleton complete" />
   </component>
 </project>
