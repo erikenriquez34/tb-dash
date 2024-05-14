@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="ticket skeleton complete">
-      <change afterPath="$PROJECT_DIR$/display/public/images/cusp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/Item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGridNav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemQuantity.tsx" afterDir="false" />
+    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="grid nav, quantity, and select outline (with cusp)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/display/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/TicketCheckout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketCheckout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/TicketHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/TicketItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +106,11 @@
       <workItem from="1712439033058" duration="2863000" />
       <workItem from="1713025488538" duration="3205000" />
       <workItem from="1713028703106" duration="4827000" />
-      <workItem from="1713033542611" duration="1280000" />
+      <workItem from="1713033542611" duration="1425000" />
+      <workItem from="1713035001675" duration="145000" />
+      <workItem from="1713126846587" duration="5000" />
+      <workItem from="1713198571422" duration="9000" />
+      <workItem from="1713216235687" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="display init">
       <option name="closed" value="true" />
@@ -138,18 +128,63 @@
       <option name="project" value="LOCAL" />
       <updated>1712441882640</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="grid nav, quantity, and select outline (with cusp)">
+      <option name="closed" value="true" />
+      <created>1713034952747</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713034952747</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -159,6 +194,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="display init" />
     <MESSAGE value="ticket skeleton complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="ticket skeleton complete" />
+    <MESSAGE value="grid nav, quantity, and select outline (with cusp)" />
+    <option name="LAST_COMMIT_MESSAGE" value="grid nav, quantity, and select outline (with cusp)" />
   </component>
 </project>

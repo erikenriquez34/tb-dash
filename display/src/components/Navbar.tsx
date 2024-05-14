@@ -9,12 +9,12 @@ function Navbar(props: Props) {
         <nav className="navbar">
             <div className={props.screen === 0 ? "navSection active-navSection" : "navSection"}
                  onClick={() => props.toggleScreen(0)}>
-                <p>Saber</p>
+                <p>Order</p>
             </div>
 
             <div className={props.screen === 1 ? "navSection active-navSection" : "navSection"}
                  onClick={() => props.toggleScreen(1)}>
-                <p>Tooth</p>
+                <p>Menu</p>
             </div>
         </nav>
     );
