@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="grid nav, quantity, and select outline (with cusp)">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGridNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGridNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemQuantity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemQuantity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tb-dash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tb-dash.iml" afterDir="false" />
-    </list>
+    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="selection and quantity bars (no cusp)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +58,6 @@
     "JavaScript Debug.Debug Application.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "22",
@@ -142,7 +130,7 @@
       <workItem from="1716516275870" duration="269000" />
       <workItem from="1716537531070" duration="1127000" />
       <workItem from="1716539359331" duration="306000" />
-      <workItem from="1716539749428" duration="3650000" />
+      <workItem from="1716539749428" duration="3927000" />
     </task>
     <task id="LOCAL-00001" summary="display init">
       <option name="closed" value="true" />
@@ -168,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713034952747</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="selection and quantity bars (no cusp)">
+      <option name="closed" value="true" />
+      <created>1716543710471</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716543710471</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +223,7 @@
     <MESSAGE value="display init" />
     <MESSAGE value="ticket skeleton complete" />
     <MESSAGE value="grid nav, quantity, and select outline (with cusp)" />
-    <option name="LAST_COMMIT_MESSAGE" value="grid nav, quantity, and select outline (with cusp)" />
+    <MESSAGE value="selection and quantity bars (no cusp)" />
+    <option name="LAST_COMMIT_MESSAGE" value="selection and quantity bars (no cusp)" />
   </component>
 </project>
