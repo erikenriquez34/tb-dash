@@ -12,7 +12,6 @@ function App() {
     return (
         <div className="App">
             <Navbar screen={screen} toggleScreen={toggleScreen}/>
-
             <Menu screen={screen}/>
         </div>
     );

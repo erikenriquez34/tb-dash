@@ -6,11 +6,28 @@
 .ItemGridNav {
     display: flex;
     justify-content: left;
-    margin-top: 10px;
+    margin: 2px 0 15px 0;
 }
 
 .ItemGridNavSection {
-    margin: 10px;
+    margin: 0 3px 0 0;
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px 3px 15px;
+}
+
+.ItemGridNavSection-active {
+    color: rebeccapurple;
+    background-color: #f3ebfc;
+    border-bottom-style: solid;
+    border-bottom-color: rebeccapurple;
+    border-bottom-width: 3px;
+}
+
+
+.ItemGridNavSection:hover {
+    cursor: pointer;
 }
 
 .selectItems {
@@ -18,7 +35,32 @@
 }
 
 .itemQuantity {
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 0;
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.quantityValue {
+    border-style: solid;
+    border-color: #9b9b9b;
+    border-width: 2px;
+    margin: 5px 0 5px 0;
+    padding: 3px 17px 3px 17px;
+}
+
+.quantityValue-active {
+    border-style: solid;
+    border-color: #5c12a1;
+    border-width: 2px;
+    background-color: rebeccapurple;
+    color: white;
+    margin: 5px 0 5px 0;
+    padding: 3px 17px 3px 17px;
+}
+
+.quantityValue:hover {
+    cursor: pointer;
 }
 
 .itemDisplay {
@@ -31,7 +73,14 @@
 .item {
     display: flex;
     flex-direction: column;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 0 10px;
     text-align: left;
     width: 85px;
+    color: #3b3b3b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item:hover {
+    cursor: pointer;
 }

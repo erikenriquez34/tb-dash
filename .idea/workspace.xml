@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="grid nav, quantity, and select outline (with cusp)">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGridNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGridNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemQuantity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemQuantity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tb-dash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tb-dash.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;erikenriquez34&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/erikenriquez34/tb-dash.git&quot;,
+    &quot;accountId&quot;: &quot;ad56a1f3-6933-461e-aff9-74ce8272967a&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -41,30 +62,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;22&quot;,
-    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/erik/Documents/Code/tb-dash/src&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/erik/Documents/Code/tb-dash/display/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "JavaScript Debug.Debug Application.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "22",
+    "js.last.introduce.type": "CONST",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/erik/Documents/Code/tb-dash/src",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\erike\\Documents\\Code\\tb-dash\\display\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -84,7 +110,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-22-openjdk-22-4caba194b151-6fbd92ee" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -111,6 +138,11 @@
       <workItem from="1713126846587" duration="5000" />
       <workItem from="1713198571422" duration="9000" />
       <workItem from="1713216235687" duration="7000" />
+      <workItem from="1716516064118" duration="208000" />
+      <workItem from="1716516275870" duration="269000" />
+      <workItem from="1716537531070" duration="1127000" />
+      <workItem from="1716539359331" duration="306000" />
+      <workItem from="1716539749428" duration="3650000" />
     </task>
     <task id="LOCAL-00001" summary="display init">
       <option name="closed" value="true" />
