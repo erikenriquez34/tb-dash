@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="selection and quantity bars (no cusp)" />
+    <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="selection and quantity bars (no cusp)">
+      <change afterPath="$PROJECT_DIR$/display/public/images/check-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/public/images/mug-hot-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/public/images/utensils-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/Order.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/Order.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderConfig.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderFooter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Orders.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/display/src/components/Orders.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket/TicketItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketItem.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,34 +73,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "JavaScript Debug.Debug Application.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "22",
-    "js.last.introduce.type": "CONST",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/erik/Documents/Code/tb-dash/src",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\erike\\Documents\\Code\\tb-dash\\display\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;22&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/erik/Documents/Code/tb-dash/src&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\erike\\Documents\\Code\\tb-dash\\display\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -131,6 +153,10 @@
       <workItem from="1716537531070" duration="1127000" />
       <workItem from="1716539359331" duration="306000" />
       <workItem from="1716539749428" duration="3927000" />
+      <workItem from="1716846625198" duration="6975000" />
+      <workItem from="1716853826142" duration="3838000" />
+      <workItem from="1716925242161" duration="1225000" />
+      <workItem from="1716932736984" duration="5624000" />
     </task>
     <task id="LOCAL-00001" summary="display init">
       <option name="closed" value="true" />

@@ -1,7 +1,6 @@
 import "./ItemGrid.css"
 import Item from "./Item"
 
-//todo: turn these into blocks they're dynamic height
 function ItemDisplay() {
     return (
         <div className="itemDisplay">

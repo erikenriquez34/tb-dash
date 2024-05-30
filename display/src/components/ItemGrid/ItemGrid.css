@@ -6,7 +6,7 @@
 .ItemGridNav {
     display: flex;
     justify-content: left;
-    margin: 2px 0 15px 0;
+    margin: 0 0 15px 0;
 }
 
 .ItemGridNavSection {
@@ -79,6 +79,7 @@
     color: #3b3b3b;
     font-size: 14px;
     font-weight: bold;
+    height: 33%;
 }
 
 .item:hover {
