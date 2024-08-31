@@ -1,6 +1,9 @@
+package com.erik.demo;
+
 import java.time.*;
 import java.time.format.*;
 import java.util.ArrayList;
+
 public class Order implements Comparable<Order> {
     ArrayList<Item> items;
     LocalDateTime initTime;

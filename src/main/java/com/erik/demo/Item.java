@@ -1,3 +1,5 @@
+package com.erik.demo;
+
 public class Item {
     String name;
     int buildTime;

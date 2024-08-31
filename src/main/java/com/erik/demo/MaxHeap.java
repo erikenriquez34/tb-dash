@@ -1,3 +1,5 @@
+package com.erik.demo;
+
 public class MaxHeap <T extends Comparable<T>> {
     private T[] heap;
     private int size;

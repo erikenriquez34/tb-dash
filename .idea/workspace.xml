@@ -5,32 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="selection and quantity bars (no cusp)">
-      <change afterPath="$PROJECT_DIR$/display/public/images/check-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/public/images/mug-hot-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/public/images/utensils-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/Order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/Order.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderConfig.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderContainer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderFooter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Order/OrderItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Orders.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/display/src/components/Orders.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/dependencies-accessors/gc.properties:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileChanges/last-build.bin:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/8.8/gc.properties:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties:Zone.Identifier" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/OrderEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/erik/demo/DemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/erik/demo/DemoApplicationTests.java:Zone.Identifier" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemDisplay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/ItemGrid/ItemGrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/Ticket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/components/Ticket/TicketItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/components/Ticket/TicketItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaxHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/MaxHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,9 +119,15 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build tb-dash.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.Debug Application.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;22&quot;,
@@ -116,12 +164,19 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.erik.demo.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
       </set>
     </attachedChunks>
   </component>
@@ -157,6 +212,12 @@
       <workItem from="1716853826142" duration="3838000" />
       <workItem from="1716925242161" duration="1225000" />
       <workItem from="1716932736984" duration="5624000" />
+      <workItem from="1725044038110" duration="40000" />
+      <workItem from="1725044322163" duration="88000" />
+      <workItem from="1725045522756" duration="67000" />
+      <workItem from="1725045595970" duration="13000" />
+      <workItem from="1725045639023" duration="927000" />
+      <workItem from="1725051072633" duration="1172000" />
     </task>
     <task id="LOCAL-00001" summary="display init">
       <option name="closed" value="true" />

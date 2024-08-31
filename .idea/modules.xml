@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/display.iml" filepath="$PROJECT_DIR$/display.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tb-dash.iml" filepath="$PROJECT_DIR$/tb-dash.iml" />
     </modules>
   </component>
 </project>
