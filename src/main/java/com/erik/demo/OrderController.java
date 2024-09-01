@@ -19,4 +19,14 @@ public class OrderController {
     public List<Order_> getOrders() {
         return orderService.getOrders();
     }
+
+    @PostMapping
+    public void addOrder(@RequestBody Order_ order) {
+        orderService.addOrder(order);
+    }
+
+    @DeleteMapping(path = "{ticketNumber}")
+    public void bumpOrder(@PathVariable("ticketNumber") Long ticketNumber) {
+        orderService.bumpOrder(ticketNumber);
+    }
 }
