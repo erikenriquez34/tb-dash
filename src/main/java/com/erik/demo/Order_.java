@@ -2,7 +2,7 @@ package com.erik.demo;
 
 import java.time.*;
 import java.time.format.*;
-import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.persistence.*;
 
@@ -24,11 +24,21 @@ public class Order_ implements Comparable<Order_> {
     Long priority;
     boolean completed;
     LocalDateTime initTime;
-    String itemList;
     LocalDateTime OTD;
 
-    @Transient
-    ArrayList<Item> items;
+    @Convert(converter = ItemListConverter.class)
+    List<Item> items;
+
+    public Order_(Long ticketNumber, List<Item> itemList) {
+        this.initTime = LocalDateTime.now();
+        this.ticketNumber = ticketNumber;
+        this.priority = 0L;
+        this.completed = false;
+        this.OTD = null;
+        this.items = itemList;
+    }
+
+    public Order_() {}
 
     public Long getTicketNumber() {
         return ticketNumber;
@@ -62,14 +72,6 @@ public class Order_ implements Comparable<Order_> {
         this.initTime = initTime;
     }
 
-    public String getItemList() {
-        return itemList;
-    }
-
-    public void setItemList(String itemList) {
-        this.itemList = itemList;
-    }
-
     public LocalDateTime getOTD() {
         return OTD;
     }
@@ -78,24 +80,13 @@ public class Order_ implements Comparable<Order_> {
         this.OTD = OTD;
     }
 
-    public ArrayList<Item> getItems() {
+    public List<Item> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList<Item> items) {
+    public void setItems(List<Item> items) {
         this.items = items;
     }
-
-    public Order_(Long ticketNumber, ArrayList<Item> itemList) {
-        this.initTime = LocalDateTime.now();
-        this.ticketNumber = ticketNumber;
-        this.priority = 0L;
-        this.completed = false;
-        this.itemList = "";
-        this.OTD = null;
-    }
-
-    public Order_() {}
 
     @Override
     public int compareTo(Order_ otherOrder) {
@@ -117,7 +108,7 @@ public class Order_ implements Comparable<Order_> {
         System.out.println(Duration.between(initTime, currentTime).toSeconds());
         return null;
     }
-    private int getTotal(ArrayList<Item> items) {
+    private int getTotal(List<Item> items) {
         int total = 0;
         for (Item item : items) {
             total = total + item.buildTime;

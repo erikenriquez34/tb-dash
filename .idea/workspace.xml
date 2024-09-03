@@ -5,32 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb78c730-969f-4a95-93a6-44ff7dbc1a05" name="Changes" comment="selection and quantity bars (no cusp)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/OrderConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/ItemListConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9dde20bc-9bdf-4a3d-aedf-9722a3d96a4f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9dde20bc-9bdf-4a3d-aedf-9722a3d96a4f/storage_v2/_src_/database/dash.ku8uAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9dde20bc-9bdf-4a3d-aedf-9722a3d96a4f/storage_v2/_src_/database/dash.ku8uAA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/OrderEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/erik/demo/OrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/OrderController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/OrderRepository.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/erik/demo/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/erik/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/erik/demo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/erik/demo/OrderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/OrderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/erik/demo/Order_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erik/demo/Order_.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +196,7 @@
       <workItem from="1725051072633" duration="1172000" />
       <workItem from="1725146067250" duration="2834000" />
       <workItem from="1725159732994" duration="607000" />
+      <workItem from="1725394588755" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="display init">
       <option name="closed" value="true" />
