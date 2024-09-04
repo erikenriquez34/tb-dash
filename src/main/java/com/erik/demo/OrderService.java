@@ -1,9 +1,11 @@
 package com.erik.demo;
 
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -35,5 +37,21 @@ public class OrderService {
             throw new IllegalStateException("Ticket does not exist.");
         }
         orderRepository.deleteById(ticketNumber);
+    }
+
+    @Transactional
+    public void updateOrder(Long ticketNumber, Long priority, boolean completed, LocalDateTime otd) {
+        Order_ order = orderRepository.findByTicketNumber(ticketNumber).
+                orElseThrow(() -> new IllegalStateException("Ticket does not exist."));
+
+        if (!priority.equals(order.getPriority())) {
+            order.setPriority(priority);
+        }
+
+        order.setCompleted(completed);
+
+        if (otd != null) {
+            order.setOTD(otd);
+        }
     }
 }

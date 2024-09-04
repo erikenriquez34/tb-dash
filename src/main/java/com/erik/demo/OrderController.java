@@ -3,6 +3,7 @@ package com.erik.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -28,5 +29,14 @@ public class OrderController {
     @DeleteMapping(path = "{ticketNumber}")
     public void bumpOrder(@PathVariable("ticketNumber") Long ticketNumber) {
         orderService.bumpOrder(ticketNumber);
+    }
+
+    @PutMapping(path = "{ticketNumber}")
+    public void updateOrder(
+            @PathVariable("ticketNumber") Long ticketNumber,
+            @RequestParam(required = false) Long priority,
+            @RequestParam(required = false) boolean completed,
+            @RequestParam(required = false) LocalDateTime OTD){
+        orderService.updateOrder(ticketNumber, priority, completed, OTD);
     }
 }

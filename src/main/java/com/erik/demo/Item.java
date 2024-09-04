@@ -5,11 +5,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties
 public class Item {
     String name;
-    int buildTime;
+    int quantity;
 
-    public Item(String name, int buildTime) {
+    public Item(String name, int quantity) {
         this.name = name;
-        this.buildTime = buildTime;
+        this.quantity = quantity;
     }
 
     public Item() {}
@@ -20,5 +20,13 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

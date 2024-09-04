@@ -1,7 +1,6 @@
 package com.erik.demo;
 
 import java.time.*;
-import java.time.format.*;
 import java.util.List;
 
 import jakarta.persistence.*;
@@ -101,17 +100,24 @@ public class Order_ implements Comparable<Order_> {
             return otherOrder.initTime.compareTo(this.initTime);
         }
     }
-    public String getTimeElapsed() {
-        DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("mm:ss");
-        LocalDateTime currentTime = LocalDateTime.now();
+    //todo: i don't know why it things this is a field??
+//    public String getTimeElapsed() {
+//        DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("mm:ss");
+//        LocalDateTime currentTime = LocalDateTime.now();
+//
+//        System.out.println(Duration.between(initTime, currentTime).toSeconds());
+//        return null;
+//    }
 
-        System.out.println(Duration.between(initTime, currentTime).toSeconds());
-        return null;
-    }
     private int getTotal(List<Item> items) {
+        //todo: map build times to another database
         int total = 0;
         for (Item item : items) {
-            total = total + item.buildTime;
+            if (item.name.equals("crunchy-taco")) {
+                total = total + 10;
+            } else {
+                total = total + 120;
+            }
         }
         return total;
     }

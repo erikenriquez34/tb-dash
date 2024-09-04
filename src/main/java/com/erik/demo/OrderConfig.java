@@ -13,19 +13,29 @@ public class OrderConfig {
     @Bean
     CommandLineRunner commandLineRunner(OrderRepository repository) {
         return args -> {
-            // Create Item objects
-            Item quesadilla = new Item("quesadilla", 35);
-            Item crunchyTaco = new Item("crunchy-taco", 8);
-            List<Item> orders = new ArrayList<>();
+            Item quesadilla = new Item("quesadilla", 1);
+            Item crunchyTaco = new Item("crunchy-taco", 2);
+            List<Item> coleItems = new ArrayList<>();
+            List<Item> jessItems = new ArrayList<>();
             
-            orders.add(quesadilla);
-            orders.add(crunchyTaco);
+            jessItems.add(quesadilla);
+            coleItems.add(crunchyTaco);
 
-            // Create an Order_ object
-            Order_ cole = new Order_(0L, orders);
+            Order_ cole = new Order_(3L, coleItems);
+            Order_ jess = new Order_(5L, jessItems);
 
-            // Save the Order_ object to the repository
-            repository.saveAll(List.of(cole));
+            MaxHeap<Order_> dash = new MaxHeap<>(4);
+
+            dash.insert(cole);
+            dash.insert(jess);
+
+            long curr = 1L;
+            while (!dash.isEmpty()) {
+                dash.remove().priority = curr;
+                curr++;
+            }
+
+            repository.saveAll(List.of(cole, jess));
         };
     }
 }
