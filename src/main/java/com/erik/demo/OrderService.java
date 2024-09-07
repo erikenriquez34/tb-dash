@@ -54,4 +54,8 @@ public class OrderService {
             order.setOTD(otd);
         }
     }
+
+    public List<Order_> getInProgress() {
+        return orderRepository.findByCompleted(false);
+    }
 }

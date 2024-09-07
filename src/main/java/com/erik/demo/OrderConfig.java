@@ -36,6 +36,12 @@ public class OrderConfig {
             }
 
             repository.saveAll(List.of(cole, jess));
+
+            for (Order_ order : repository.findByCompleted(false)) {
+                for (Item item : order.getItems()) {
+                    System.out.println(item.name);
+                }
+            }
         };
     }
 }
