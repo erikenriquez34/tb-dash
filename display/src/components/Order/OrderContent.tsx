@@ -1,18 +1,21 @@
 import "./Order.css"
 import OrderItem from "./OrderItem"
 
-function OrderContent() {
+interface Item {
+    name: string;
+    quantity: number;
+}
+
+interface Props {
+    items: Item[];
+}
+
+function OrderContent(props: Props) {
     return (
         <div className="orderContent">
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
-            <OrderItem count={7} name={"Crunchy Taco"}/>
+            {props.items.map(item => (
+                <OrderItem name={item.name} quantity={item.quantity} />
+            ) )}
         </div>
     );
 }

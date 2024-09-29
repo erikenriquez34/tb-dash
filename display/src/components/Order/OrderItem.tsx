@@ -2,13 +2,13 @@ import "./Order.css"
 
 interface Props {
     name: string;
-    count: number
+    quantity: number
 }
 
 function OrderItem(props: Props) {
     return (
         <div className="orderItem">
-            {props.count}x {props.name}
+            {props.quantity}x {props.name}
         </div>
     )
 }

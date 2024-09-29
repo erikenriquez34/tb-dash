@@ -1,6 +1,11 @@
 import "./Order.css"
 
-function OrderFooter() {
+interface Props {
+    completed: boolean;
+    initTime: string;
+}
+
+function OrderFooter(props: Props) {
     return (
         <footer className="orderFooter">
             <div className="orderFood">
@@ -8,11 +13,11 @@ function OrderFooter() {
             </div>
 
             <div className="orderPayment">
-                Paid
+                {props.completed ? ("Placed") : ("Completed")}
             </div>
 
             <div className="orderTime">
-                00:39
+                {props.initTime}
             </div>
         </footer>
     )

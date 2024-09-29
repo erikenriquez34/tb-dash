@@ -1,6 +1,10 @@
 import "./Order.css"
 
-function OrderHeader() {
+interface Props {
+    ticketNumber: number;
+}
+
+function OrderHeader(props: Props) {
     return (
         <header className="orderHeader">
             <div className="orderOption">
@@ -8,7 +12,7 @@ function OrderHeader() {
             </div>
 
             <div className="orderNumber">
-                #0024
+                #{props.ticketNumber}
             </div>
         </header>
     );
