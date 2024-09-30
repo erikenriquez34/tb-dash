@@ -2,6 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+/.idea/
 
 ### Eclipse ###
 .apt_generated
@@ -31,12 +32,16 @@ bin/
 /node_modules
 /.pnp
 .pnp.js
+/.gradle/
 
 # testing
 /coverage
 
 # production
 /build
+/build/classes/
+/build/tmp/
+build/
 
 # misc
 .DS_Store

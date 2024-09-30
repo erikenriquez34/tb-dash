@@ -6,7 +6,7 @@ import TicketCheckout from "./TicketCheckout";
 function Ticket() {
     return (
         <div className="ticketContainer">
-            <TicketHeader date={"Apr 6, 2024"} time={"1:33 pm"} order={27}/>
+            <TicketHeader order={27}/>
 
             <div className="ticketItemContainer">
                 <TicketItem name={"Soft Taco"} count={12} price={3}/>

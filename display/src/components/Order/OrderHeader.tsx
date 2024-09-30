@@ -12,7 +12,7 @@ function OrderHeader(props: Props) {
             </div>
 
             <div className="orderNumber">
-                #{props.ticketNumber}
+                #{String(props.ticketNumber).padStart(4, '0')}
             </div>
         </header>
     );
