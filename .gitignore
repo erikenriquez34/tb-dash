@@ -2,7 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-/.idea/
+.idea/
 
 ### Eclipse ###
 .apt_generated
@@ -29,7 +29,7 @@ bin/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+display/node_modules
 /.pnp
 .pnp.js
 /.gradle/
