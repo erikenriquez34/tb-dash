@@ -8,7 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface OrderRepository extends JpaRepository<Order_, Long> {
-
     Optional<Order_> findByTicketNumber(Long ticketNumber);
     List<Order_> findByCompleted(boolean completed);
 }

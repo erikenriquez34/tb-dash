@@ -58,4 +58,12 @@ public class OrderService {
     public List<Order_> getInProgress() {
         return orderRepository.findByCompleted(false);
     }
+
+    public Optional<Order_> mostRecent() {
+        List<Order_> orders = getOrders();
+        if (orders.isEmpty()) {
+            return Optional.empty();
+        }
+        return Optional.of(orders.get(orders.size() - 1));
+    }
 }

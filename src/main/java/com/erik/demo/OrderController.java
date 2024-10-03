@@ -22,6 +22,11 @@ public class OrderController {
         return orderService.getOrders();
     }
 
+    @GetMapping(path = "/recent")
+    public Long mostRecent() {
+        return orderService.mostRecent().orElseThrow(() -> new IllegalStateException("No orders found")).ticketNumber;
+    }
+
     @PostMapping
     public void addOrder(@RequestBody Order_ order) {
         orderService.addOrder(order);
