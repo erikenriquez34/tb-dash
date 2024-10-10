@@ -3,14 +3,28 @@ import TicketHeader from './TicketHeader';
 import TicketItem from './TicketItem';
 import TicketCheckout from "./TicketCheckout";
 
-function Ticket() {
+interface Item {
+    name: string;
+    quantity: number;
+}
+
+interface Props {
+    ticketItems: Item[];
+}
+
+function Ticket(props : Props) {
     return (
         <div className="ticketContainer">
             <TicketHeader order={27}/>
 
             <div className="ticketItemContainer">
-                <TicketItem name={"Soft Taco"} count={12} price={3}/>
-                <TicketItem name={"Crunchwrap"} count={2} price={52.32}/>
+                {props.ticketItems.map(item => (
+                    <TicketItem
+                        name={item.name}
+                        quantity={item.quantity}
+                        price={3}
+                    />
+                ))}
             </div>
 
             <TicketCheckout total={12.5}/>

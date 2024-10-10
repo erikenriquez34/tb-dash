@@ -1,15 +1,21 @@
 import "./ItemGrid.css"
 import Item from "./Item"
 
-function ItemDisplay() {
+interface Props {
+    onAddToTicket: (name: string, quantity: number) => void;
+    selection: number;
+    setSelection: (selection: number) => void;
+}
+
+function ItemDisplay(props : Props) {
     return (
         <div className="itemDisplay">
-            <Item imageName={"crunchyTaco"} name={"Crunchy Taco"}/>
-            <Item imageName={"softTaco"} name={"Soft Taco"}/>
-            <Item imageName={"chalupaSupreme"} name={"Chalupa Supreme"}/>
-            <Item imageName={"crunchyTaco"} name={"Crunchy Taco"}/>
-            <Item imageName={"softTaco"} name={"Soft Taco"}/>
-            <Item imageName={"chalupaSupreme"} name={"Chalupa Supreme"}/>
+            <Item onAddToTicket={props.onAddToTicket} quantity={props.selection} imageName={"crunchyTaco"}
+                  name={"Crunchy Taco"} setSelection={props.setSelection} />
+            <Item onAddToTicket={props.onAddToTicket} quantity={props.selection} imageName={"softTaco"}
+                  name={"Soft Taco"} setSelection={props.setSelection}/>
+            <Item onAddToTicket={props.onAddToTicket} quantity={props.selection} imageName={"chalupaSupreme"}
+                  name={"Chalupa Supreme"} setSelection={props.setSelection}/>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import {useState} from "react";
 
 interface Props {
     name: string;
-    count: number
+    quantity: number
     price: number;
 }
 
@@ -20,7 +20,7 @@ function TicketItem(props: Props) {
             </div>
 
             <div className={remove === 1 ? "ticketItemCount fade" : "ticketItemCount"}>
-                x{props.count}
+                x{props.quantity}
             </div>
 
             <div className={remove === 1 ? "ticketItemPrice fade" : "ticketItemPrice"}>
