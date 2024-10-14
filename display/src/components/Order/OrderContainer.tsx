@@ -12,6 +12,7 @@ interface Data {
     completed: boolean;
     initTime: string;
     items: Item[];
+    active: boolean;
 }
 
 function OrderContainer() {
@@ -20,16 +21,14 @@ function OrderContainer() {
     useEffect(() => {
         const fetchOrders = () => {
             //get all active, user will bump
-            fetch("http://localhost:8080/api/orders").then(response => response.json()).then(data => {
+            fetch("http://localhost:8080/api/orders/active").then(response => response.json()).then(data => {
                 setOrders(data);
             }).catch(error => console.error("Could NOT get any data from the table:", error));
         }
-
         fetchOrders();
         const interval = setInterval(fetchOrders, 1000);
         return () => clearInterval(interval);
     }, []);
-
 
     return (
         <div className="orderContainer">

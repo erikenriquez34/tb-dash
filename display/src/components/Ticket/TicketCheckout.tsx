@@ -18,13 +18,13 @@ function TicketCheckout(props: Props) {
     }
 
     const handleSubmitClick = async () => {
-        // Assuming ticketItems is the array containing the items in the ticket
         const orderData = {
             //make this 1 + current
-            ticketNumber: Math.floor(Math.random() * 1000),  // Generate a random ticket number
-            priority: 1,
+            ticketNumber: Math.floor(Math.random() * 1000),
+            priority: 0,
             completed: false,
             initTime: new Date().toISOString(),
+            active: true,
             items: props.ticketItems.map(item => ({
                 name: item.name,
                 quantity: item.quantity
@@ -32,7 +32,7 @@ function TicketCheckout(props: Props) {
         };
 
         try {
-            const response = await fetch('http://localhost:8080/api/orders', {
+            const response = await fetch('http://localhost:8080/api/orders/post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

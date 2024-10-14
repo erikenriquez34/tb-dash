@@ -23,6 +23,7 @@ public class Order_ implements Comparable<Order_> {
     Long priority;
     boolean completed;
     Instant initTime;
+    boolean active;
 
     @Convert(converter = ItemListConverter.class)
     List<Item> items;
@@ -33,6 +34,7 @@ public class Order_ implements Comparable<Order_> {
         this.priority = 0L;
         this.completed = false;
         this.items = itemList;
+        this.active = true;
     }
 
     public Order_() {}
@@ -75,6 +77,14 @@ public class Order_ implements Comparable<Order_> {
 
     public void setItems(List<Item> items) {
         this.items = items;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     @Override

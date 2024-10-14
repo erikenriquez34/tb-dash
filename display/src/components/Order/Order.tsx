@@ -9,11 +9,11 @@ interface Item {
 }
 
 interface Props {
-    ticketNumber: number;
-    priority: number;
-    completed: boolean;
-    initTime: string;
-    items: Item[];
+    ticketNumber: number,
+    priority: number,
+    completed: boolean,
+    initTime: string,
+    items: Item[],
 }
 
 function Order(props: Props) {

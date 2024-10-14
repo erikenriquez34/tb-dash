@@ -17,7 +17,7 @@ public class OrderConfig {
             Item crunchyTaco = new Item("crunchy-taco", 2);
             List<Item> coleItems = new ArrayList<>();
             List<Item> jessItems = new ArrayList<>();
-            
+
             jessItems.add(quesadilla);
             coleItems.add(crunchyTaco);
 
@@ -37,7 +37,7 @@ public class OrderConfig {
 
             repository.saveAll(List.of(cole, jess));
 
-            for (Order_ order : repository.findByCompleted(false)) {
+            for (Order_ order : repository.findByActive(true)) {
                 for (Item item : order.getItems()) {
                     System.out.println(item.name);
                 }

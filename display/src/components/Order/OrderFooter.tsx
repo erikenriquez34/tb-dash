@@ -35,7 +35,7 @@ function OrderFooter(props: Props) {
             </div>
 
             <div className="orderPayment">
-                {props.completed ? ("Placed") : ("Completed")}
+                {props.completed ? ("Completed") : ("Placed")}
             </div>
 
             <div className="orderTime">

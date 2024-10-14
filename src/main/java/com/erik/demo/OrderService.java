@@ -21,25 +21,20 @@ public class OrderService {
         return orderRepository.findAll();
     }
 
-    public void addOrder(Order_ order) {
+    public List<Order_> getActive() {
+        return orderRepository.findByActive(true);
+    }
+
+    public Order_ addOrder(Order_ order) {
         Optional<Order_> orderOptional = orderRepository.findByTicketNumber(order.getTicketNumber());
         if (orderOptional.isPresent()) {
             throw new IllegalStateException("Duplicate ticket numbers found.");
         }
-        orderRepository.save(order);
-    }
-
-    public void bumpOrder(Long ticketNumber) {
-        boolean exists = orderRepository.existsById(ticketNumber);
-
-        if (!exists) {
-            throw new IllegalStateException("Ticket does not exist.");
-        }
-        orderRepository.deleteById(ticketNumber);
+        return orderRepository.save(order);
     }
 
     @Transactional
-    public void updateOrder(Long ticketNumber, Long priority, boolean completed) {
+    public void updateOrder(Long ticketNumber, Long priority, boolean completed, boolean active) {
         Order_ order = orderRepository.findByTicketNumber(ticketNumber).
                 orElseThrow(() -> new IllegalStateException("Ticket does not exist."));
 
@@ -47,11 +42,8 @@ public class OrderService {
             order.setPriority(priority);
         }
 
+        order.setActive(active);
         order.setCompleted(completed);
-    }
-
-    public List<Order_> getInProgress() {
-        return orderRepository.findByCompleted(false);
     }
 
     public Optional<Order_> mostRecent() {
@@ -62,7 +54,17 @@ public class OrderService {
         return Optional.of(orders.get(orders.size() - 1));
     }
 
-    public Order_ saveOrder(Order_ order) {
-        return orderRepository.save(order);
+    public String bumpOrder() {
+        // Get the first active order from the repository
+        Order_ order = orderRepository.findByActive(true).get(0);
+
+        if (order == null) {
+            return "No active order found.";
+        }
+
+        order.setActive(false);
+
+        orderRepository.save(order);
+        return "Top active order has been deactivated.";
     }
 }

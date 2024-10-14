@@ -7,7 +7,8 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping(path = "api/orders")
+@RequestMapping(path = {"api/orders", "api/orders/active"})
+
 public class OrderController {
     private final OrderService orderService;
 
@@ -16,36 +17,23 @@ public class OrderController {
         this.orderService = orderService;
     }
 
-    @GetMapping
-    public List<Order_> getOrders() {
-        return orderService.getOrders();
+//    @GetMapping(path = "/")
+//    public List<Order_> getOrders() {
+//        return orderService.getOrders();
+//    }
+
+    @GetMapping(path = "/active")
+    public List<Order_> getActiveOrders() {
+        return orderService.getActive();
     }
 
-    @GetMapping(path = "/recent")
-    public Long mostRecent() {
-        return orderService.mostRecent().orElseThrow(() -> new IllegalStateException("No orders found")).ticketNumber;
+    @PutMapping("/bump")
+    public String bumpOrder() {
+        return orderService.bumpOrder();
     }
 
-    @PostMapping
-    public void addOrder(@RequestBody Order_ order) {
-        orderService.addOrder(order);
-    }
-
-    @PostMapping("/api/orders")
-    public Order_ createOrder(@RequestBody Order_ order) {
-        return orderService.saveOrder(order);
-    }
-
-    @DeleteMapping(path = "{ticketNumber}")
-    public void bumpOrder(@PathVariable("ticketNumber") Long ticketNumber) {
-        orderService.bumpOrder(ticketNumber);
-    }
-
-    @PutMapping(path = "{ticketNumber}")
-    public void updateOrder(
-            @PathVariable("ticketNumber") Long ticketNumber,
-            @RequestParam(required = false) Long priority,
-            @RequestParam(required = false) boolean completed) {
-        orderService.updateOrder(ticketNumber, priority, completed);
+    @PostMapping("/post")
+    public Order_ addOrder(@RequestBody Order_ order) {
+        return orderService.addOrder(order);
     }
 }
