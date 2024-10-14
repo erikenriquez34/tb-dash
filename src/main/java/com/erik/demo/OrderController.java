@@ -3,7 +3,6 @@ package com.erik.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -32,6 +31,11 @@ public class OrderController {
         orderService.addOrder(order);
     }
 
+    @PostMapping("/api/orders")
+    public Order_ createOrder(@RequestBody Order_ order) {
+        return orderService.saveOrder(order);
+    }
+
     @DeleteMapping(path = "{ticketNumber}")
     public void bumpOrder(@PathVariable("ticketNumber") Long ticketNumber) {
         orderService.bumpOrder(ticketNumber);
@@ -41,8 +45,7 @@ public class OrderController {
     public void updateOrder(
             @PathVariable("ticketNumber") Long ticketNumber,
             @RequestParam(required = false) Long priority,
-            @RequestParam(required = false) boolean completed,
-            @RequestParam(required = false) LocalDateTime OTD){
-        orderService.updateOrder(ticketNumber, priority, completed, OTD);
+            @RequestParam(required = false) boolean completed) {
+        orderService.updateOrder(ticketNumber, priority, completed);
     }
 }

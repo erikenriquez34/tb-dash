@@ -22,18 +22,16 @@ public class Order_ implements Comparable<Order_> {
     Long ticketNumber;
     Long priority;
     boolean completed;
-    LocalDateTime initTime;
-    LocalDateTime OTD;
+    Instant initTime;
 
     @Convert(converter = ItemListConverter.class)
     List<Item> items;
 
     public Order_(Long ticketNumber, List<Item> itemList) {
-        this.initTime = LocalDateTime.now();
+        this.initTime = Instant.now();
         this.ticketNumber = ticketNumber;
         this.priority = 0L;
         this.completed = false;
-        this.OTD = null;
         this.items = itemList;
     }
 
@@ -63,20 +61,12 @@ public class Order_ implements Comparable<Order_> {
         this.completed = completed;
     }
 
-    public LocalDateTime getInitTime() {
+    public Instant getInitTime() {
         return initTime;
     }
 
-    public void setInitTime(LocalDateTime initTime) {
+    public void setInitTime(Instant initTime) {
         this.initTime = initTime;
-    }
-
-    public LocalDateTime getOTD() {
-        return OTD;
-    }
-
-    public void setOTD(LocalDateTime OTD) {
-        this.OTD = OTD;
     }
 
     public List<Item> getItems() {
@@ -100,14 +90,6 @@ public class Order_ implements Comparable<Order_> {
             return otherOrder.initTime.compareTo(this.initTime);
         }
     }
-    //todo: i don't know why it things this is a field??
-//    public String getTimeElapsed() {
-//        DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("mm:ss");
-//        LocalDateTime currentTime = LocalDateTime.now();
-//
-//        System.out.println(Duration.between(initTime, currentTime).toSeconds());
-//        return null;
-//    }
 
     private int getTotal(List<Item> items) {
         //todo: map build times to another database

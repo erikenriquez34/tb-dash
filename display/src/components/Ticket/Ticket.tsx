@@ -10,6 +10,7 @@ interface Item {
 
 interface Props {
     ticketItems: Item[];
+    setTicketItems: (items: Item[]) => void;
 }
 
 function Ticket(props : Props) {
@@ -27,7 +28,7 @@ function Ticket(props : Props) {
                 ))}
             </div>
 
-            <TicketCheckout total={12.5}/>
+            <TicketCheckout ticketItems={props.ticketItems} setTicketItems={props.setTicketItems} total={12.5}/>
         </div>
     );
 }

@@ -14,10 +14,10 @@ interface Item {
 
 function Menu(props: Props) {
     const [ticketItems, setTicketItems] = useState<Item[]>([]);
+
     const handleAddToTicket = (name: string, quantity: number) => {
         setTicketItems((prevItems) => {
             const duplicate = prevItems.findIndex(item => item.name === name);
-
             if (duplicate !== -1) {
                 const updatedItems = [...prevItems];
                 updatedItems[duplicate].quantity += quantity;
@@ -30,7 +30,7 @@ function Menu(props: Props) {
 
     return (
         <div className={props.screen === 1 ? "menuScreen" : "hidden"}>
-            <Ticket ticketItems={ticketItems}/>
+            <Ticket ticketItems={ticketItems} setTicketItems={setTicketItems}/>
             <ItemGrid onAddToTicket={handleAddToTicket} />
         </div>
     );

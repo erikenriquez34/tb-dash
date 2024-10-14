@@ -5,7 +5,6 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +39,7 @@ public class OrderService {
     }
 
     @Transactional
-    public void updateOrder(Long ticketNumber, Long priority, boolean completed, LocalDateTime otd) {
+    public void updateOrder(Long ticketNumber, Long priority, boolean completed) {
         Order_ order = orderRepository.findByTicketNumber(ticketNumber).
                 orElseThrow(() -> new IllegalStateException("Ticket does not exist."));
 
@@ -49,10 +48,6 @@ public class OrderService {
         }
 
         order.setCompleted(completed);
-
-        if (otd != null) {
-            order.setOTD(otd);
-        }
     }
 
     public List<Order_> getInProgress() {
@@ -65,5 +60,9 @@ public class OrderService {
             return Optional.empty();
         }
         return Optional.of(orders.get(orders.size() - 1));
+    }
+
+    public Order_ saveOrder(Order_ order) {
+        return orderRepository.save(order);
     }
 }

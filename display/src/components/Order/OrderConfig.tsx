@@ -1,6 +1,5 @@
 import "./Order.css"
 
-
 //remove most recent type stuff so you can properly handle no recent
 async function removeRecent() {
     const get = await fetch(`http://localhost:8080/api/orders/recent`, {

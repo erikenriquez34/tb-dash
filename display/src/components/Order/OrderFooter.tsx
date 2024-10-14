@@ -31,7 +31,7 @@ function OrderFooter(props: Props) {
     return (
         <footer className="orderFooter">
             <div className="orderFood">
-                0D
+                4Food
             </div>
 
             <div className="orderPayment">

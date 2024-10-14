@@ -18,14 +18,18 @@ function OrderContainer() {
     const [orders, setOrders] = useState<Data[]>([]);
 
     useEffect(() => {
-        //get all active, user will bump
-        fetch("http://localhost:8080/api/orders")
-            .then(response => response.json())
-            .then(data => {
+        const fetchOrders = () => {
+            //get all active, user will bump
+            fetch("http://localhost:8080/api/orders").then(response => response.json()).then(data => {
                 setOrders(data);
-            })
-            .catch(error => console.error("Error fetching order data:", error));
+            }).catch(error => console.error("Could NOT get any data from the table:", error));
+        }
+
+        fetchOrders();
+        const interval = setInterval(fetchOrders, 1000);
+        return () => clearInterval(interval);
     }, []);
+
 
     return (
         <div className="orderContainer">
